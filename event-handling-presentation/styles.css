@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #121314;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: .8px;
+
+  color: #DFE0E6;
+}
+
+/*.container {
+  position: relative;
+  overflow: hidden;
+}*/
+
+.font-32 {
+  font-size: 32px;
+}
+
+.row {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.column {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.h-col-center {
+  align-items: center;
+}
+.row .center {
+  /*justify-content: center;*/
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+}
+
+
+/* Left sidebar styles */
+#left-sidebar {
+  display: fixed;
+  width: 350px;
+  height: 100%;
+
+  background-color: #1c1c1f;
+}
+
+.wrapper {
+  padding: 15px;
+  width: 90%;
+}
+
+.dark-border {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #121314;
+}
+
+.green-border {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #648F00;
+}
+
+.active {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #648F00;
+  background-color: #222326;
+}
+
+#logo-wrapper {
+  /*padding: 15px;
+  width: 90%;*/
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo-wrapper > #logo {
+  margin-right: 50px;
+  width: 32px;
+  height: 30px;
+  background-image: url('logo.png');
+  background-size: cover;
+}
+
+#search-wrapper {
+  width: 90%;
+  padding: 15px;
+}
+
+#search-prompt {
+  border-radius: 10px;
+  height: 20px;
+  width: 100%;
+}
+
+#playlist-panel {
+  overflow-y: scroll;
+}
+
+.playlist-single {
+  height: 60px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.playlist-single:hover {
+  background-color: #222326;
+}
+
+.playlist-play-button {
+  display: none;
+}
+
+.play-button-circle {
+  height: 40px;
+  width: 40px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 25px;
+  border-color: #88898C;
+}
+
+.arrow-right {
+  margin-left: 5px;
+  width: 0;
+  height: 0;
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  border-left: 17px solid #88898C;
+}
+
+.playlist-single:hover > .playlist-play-button {
+  display: inherit;
+  z-index: 2;
+  height: 50px;
+  width: 50px;
+
+  background-color: #222326;
+}
+
+.playlist-single:hover > .album-art {
+  display: none;
+}
+
+.album-art {
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+}
+
+.playlist-text {
+  margin-left: 15px;
+  margin-top: 5px;
+  height: 40px;
+}
+
+.playlist-name {
+  font-size: 14px;
+}
+
+.playlist-owner {
+  font-size: 10px;
+}
+
+#content {
+  display: fixed;
+  width: calc(100% - 600px);
+  height: 100%;
+  overflow: scroll;
+}
+
+@media (max-width: 900px) {
+  #right-sidebar {
+    display: none;
+  }
+
+  #content {
+    width: calc(100% - 350px);
+  }
+}
+
+@media (min-width: 1000px) {
+  #right-sidebar {
+    display: fixed;
+    width: 250px;
+    height: 100%;
+    background-color: #1c1c1f;
+  }
+
+  #content {
+    width: calc(100% - 600px);
+  }
+}
+
+#playlist-description {
+  width: 100%;
+  height: 200px;
+}
+
+#playlist-description > .album-art {
+  height: 170px;
+  width: 170px;
+}
+
+.content-border {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #1c1c1f;
+}
+
+.subtext {
+  color: #88898C;
+}
+
+.common-text {
+  color: #DFE0E6;
+}
+
+.button-1 {
+  margin-right: 10px;
+  font-size: 10px;
+  background-color: #648F00;
+  height: 20px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+.button-2 {
+  margin-right: 10px;
+  font-size: 10px;
+  height: 18px;
+  width: 120px;
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: #648F00;
+  border-radius: 10px;
+}
+
+.button-3 {
+  margin-right: 10px;
+  font-size: 10px;
+  height: 18px;
+  width: 18px;
+
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  border-color: #88898C;
+}
+
+#description-text {
+  height: 170px;
+}

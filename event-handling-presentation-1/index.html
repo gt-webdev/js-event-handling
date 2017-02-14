@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+  <script src="script.js"></script>
+  <title>Not-ify | A Spotify clone</title>
+</head>
+<body onkeypress="handleKeyPress(event)">
+  <div id="main" class="row">
+    <div id="left-sidebar" class="column h-col-center">
+      <div id="logo-wrapper" class="wrapper green-border" style="padding-top: 20px; padding-bottom: 20px;">
+        <div id="logo"></div>
+        <div style="font-size: 14px;">Welcome back, Sai Naidu!</div>
+      </div>
+      <div class="wrapper dark-border">
+        <input id="search-prompt" type="text" placeholder="&nbsp;&nbsp;&nbsp;⌕"/>
+      </div>
+      <div id="playlist-panel" class="wrapper">
+
+        <!-- Need to put event in here. What event should I choose? -->
+        <div class="playlist-single wrapper dark-border row active" onclick="toggleMusic(this);">
+          <div class="playlist-play-button row center">
+            <div class="play-button-circle row center">
+              <div class="arrow-right"></div>
+            </div>
+          </div>
+          <div class="album-art" style="background-image: url('dali.jpg');"></div>
+          <div class="playlist-text column" style="justify-content: space-between;">
+            <div class="playlist-name">v a p o r w a v e</div>
+            <div class="playlist-owner">by Bernie Sanders</div>
+          </div>
+        </div>
+
+
+
+        <div class="playlist-single wrapper dark-border row">
+          <div class="playlist-play-button row center">
+            <div class="play-button-circle row center">
+              <div class="arrow-right"></div>
+            </div>
+          </div>
+          <div class="album-art" style="background-image: url('https://i1.sndcdn.com/artworks-000123229421-qikrcc-t500x500.jpg');"></div>
+          <div class="playlist-text column" style="justify-content: space-between;">
+            <div class="playlist-name">Macintosh Plus</div>
+            <div class="playlist-owner">by Bernie Sanders</div>
+          </div>
+        </div>
+
+
+        <div class="playlist-single wrapper dark-border row" onclick="toggleMusic(this);">
+          <div class="playlist-play-button row center">
+            <div class="play-button-circle row center">
+              <div class="arrow-right"></div>
+            </div>
+          </div>
+          <div class="album-art" style="background-image: url('https://i1.sndcdn.com/artworks-000123229421-qikrcc-t500x500.jpg');"></div>
+          <div class="playlist-text column" style="justify-content: space-between;">
+            <div class="playlist-name">Blank Banshee</div>
+            <div class="playlist-owner">by Bernie Sanders</div>
+          </div>
+        </div>
+        <div class="playlist-single wrapper dark-border row">
+          <div class="playlist-play-button row center">
+            <div class="play-button-circle row center">
+              <div class="arrow-right"></div>
+            </div>
+          </div>
+          <div class="album-art" style="background-image: url('https://i1.sndcdn.com/artworks-000123229421-qikrcc-t500x500.jpg');"></div>
+          <div class="playlist-text column" style="justify-content: space-between;">
+            <div class="playlist-name">Macross 82-99</div>
+            <div class="playlist-owner">by Bernie Sanders</div>
+          </div>
+        </div>
+        <div class="playlist-single wrapper dark-border row">
+          <div class="playlist-play-button row center">
+            <div class="play-button-circle row center">
+              <div class="arrow-right"></div>
+            </div>
+          </div>
+          <div class="album-art" style="background-image: url('https://i1.sndcdn.com/artworks-000123229421-qikrcc-t500x500.jpg');"></div>
+          <div class="playlist-text column" style="justify-content: space-between;">
+            <div class="playlist-name">Saint Pepsi</div>
+            <div class="playlist-owner">by Bernie Sanders</div>
+          </div>
+        </div>
+        <div class="playlist-single wrapper dark-border row">
+          <div class="playlist-play-button row center">
+            <div class="play-button-circle row center">
+              <div class="arrow-right"></div>
+            </div>
+          </div>
+          <div class="album-art" style="background-image: url('https://i1.sndcdn.com/artworks-000144799654-9vtyje-t500x500.jpg')"></div>
+          <div class="playlist-text column" style="justify-content: space-between;">
+            <div class="playlist-name">情報デスクVIRTUAL</div>
+            <div class="playlist-owner">by Bernie Sanders</div>
+          </div>
+        </div>
+        <div class="playlist-single wrapper dark-border row">
+          <div class="playlist-play-button row center">
+            <div class="play-button-circle row center">
+              <div class="arrow-right"></div>
+            </div>
+          </div>
+          <div class="album-art" style="background-image: url('https://i1.sndcdn.com/artworks-000123229421-qikrcc-t500x500.jpg');"></div>
+          <div class="playlist-text column" style="justify-content: space-between;">
+            <div class="playlist-name">2 8 1 4</div>
+            <div class="playlist-owner">by Bernie Sanders</div>
+          </div>
+        </div>
+        <div class="playlist-single wrapper dark-border row">
+          <div class="playlist-play-button row center">
+            <div class="play-button-circle row center">
+              <div class="arrow-right"></div>
+            </div>
+          </div>
+          <div class="album-art" style="background-image: url('https://i1.sndcdn.com/artworks-000123229421-qikrcc-t500x500.jpg');"></div>
+          <div class="playlist-text column" style="justify-content: space-between;">
+            <div class="playlist-name">PrismCorp Virtual Enterprises</div>
+            <div class="playlist-owner">by Bernie Sanders</div>
+          </div>
+        </div>
+        <div class="playlist-single wrapper dark-border row">
+          <div class="playlist-play-button row center">
+            <div class="play-button-circle row center">
+              <div class="arrow-right"></div>
+            </div>
+          </div>
+          <div class="album-art" style="background-image: url('https://i1.sndcdn.com/artworks-000123229421-qikrcc-t500x500.jpg');"></div>
+          <div class="playlist-text column" style="justify-content: space-between;">
+            <div class="playlist-name">Sacred Tapestry</div>
+            <div class="playlist-owner">by Bernie Sanders</div>
+          </div>
+        </div>
+        <div class="playlist-single wrapper dark-border row">
+          <div class="playlist-play-button row center">
+            <div class="play-button-circle row center">
+              <div class="arrow-right"></div>
+            </div>
+          </div>
+          <div class="album-art" style="background-image: url('https://i1.sndcdn.com/artworks-000123229421-qikrcc-t500x500.jpg');"></div>
+          <div class="playlist-text column" style="justify-content: space-between;">
+            <div class="playlist-name">Yeezy</div>
+            <div class="playlist-owner">by Bernie Sanders</div>
+          </div>
+        </div>
+        <div class="playlist-single wrapper dark-border row">
+          <div class="playlist-play-button row center">
+            <div class="play-button-circle row center">
+              <div class="arrow-right"></div>
+            </div>
+          </div>
+          <div class="album-art" style="background-image: url('https://i1.sndcdn.com/artworks-000123229421-qikrcc-t500x500.jpg');"></div>
+          <div class="playlist-text column" style="justify-content: space-between;">
+            <div class="playlist-name">Yeezy</div>
+            <div class="playlist-owner">by Bernie Sanders</div>
+          </div>
+        </div>
+        <div class="playlist-single wrapper dark-border row">
+          <div class="playlist-play-button row center">
+            <div class="play-button-circle row center">
+              <div class="arrow-right"></div>
+            </div>
+          </div>
+          <div class="album-art" style="background-image: url('https://i1.sndcdn.com/artworks-000123229421-qikrcc-t500x500.jpg');"></div>
+          <div class="playlist-text column" style="justify-content: space-between;">
+            <div class="playlist-name">Yeezy</div>
+            <div class="playlist-owner">by Bernie Sanders</div>
+          </div>
+        </div>
+        <div class="playlist-single wrapper dark-border row">
+          <div class="playlist-play-button row center">
+            <div class="play-button-circle row center">
+              <div class="arrow-right"></div>
+            </div>
+          </div>
+          <div class="album-art" style="background-image: url('https://i1.sndcdn.com/artworks-000123229421-qikrcc-t500x500.jpg');"></div>
+          <div class="playlist-text column" style="justify-content: space-between;">
+            <div class="playlist-name">Yeezy</div>
+            <div class="playlist-owner">by Bernie Sanders</div>
+          </div>
+        </div>
+        <div class="playlist-single wrapper dark-border row">
+          <div class="playlist-play-button row center">
+            <div class="play-button-circle row center">
+              <div class="arrow-right"></div>
+            </div>
+          </div>
+          <div class="album-art" style="background-image: url('https://i1.sndcdn.com/artworks-000123229421-qikrcc-t500x500.jpg');"></div>
+          <div class="playlist-text column" style="justify-content: space-between;">
+            <div class="playlist-name">Yeezy</div>
+            <div class="playlist-owner">by Bernie Sanders</div>
+          </div>
+        </div>
+        <div class="playlist-single wrapper dark-border row">
+          <div class="playlist-play-button row center">
+            <div class="play-button-circle row center">
+              <div class="arrow-right"></div>
+            </div>
+          </div>
+          <div class="album-art" style="background-image: url('https://i1.sndcdn.com/artworks-000123229421-qikrcc-t500x500.jpg');"></div>
+          <div class="playlist-text column" style="justify-content: space-between;">
+            <div class="playlist-name">Yeezy</div>
+            <div class="playlist-owner">by Bernie Sanders</div>
+          </div>
+        </div>
+        <div class="playlist-single wrapper dark-border row">
+          <div class="playlist-play-button row center">
+            <div class="play-button-circle row center">
+              <div class="arrow-right"></div>
+            </div>
+          </div>
+          <div class="album-art" style="background-image: url('https://i1.sndcdn.com/artworks-000123229421-qikrcc-t500x500.jpg');"></div>
+          <div class="playlist-text column" style="justify-content: space-between;">
+            <div class="playlist-name">Yeezy</div>
+            <div class="playlist-owner">by Bernie Sanders</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="content" class="wrapper column">
+      <div id="playlist-description" class="wrapper row content-border">
+        <div class="album-art" style="background-image: url('https://i1.sndcdn.com/artworks-000123229421-qikrcc-t500x500.jpg');"></div>
+        <div id="description-text" class="column" style="margin-left: 15px;">
+          <p class="subtext" style="flex-grow: 1;">PLAYLIST</p>
+          <p class="font-32" style="flex-grow: 1;">v a p o r w a v e</p>
+          <div style="flex-grow: 30;"></div>
+          <div class="row" style="flex-grow: 1;">
+            <div class="button-1 row center" style="flex-grow:3;"><p>PLAY</p></div>
+            <div class="button-2 row center" style="flex-grow:5;"><p>FOLLOWING</p></div>
+            <div class="button-3 row center" style="flex-grow:1;"><span style="position: relative; top: -3px;">...</span></div>
+            <div style="flex-grow:5;"></div>
+            <!--<div id="follower-count" class="column center" style="position: relative; top: -17px; flex-grow: 3;"><p class="subtext">Followers</p><p>782</p></div>-->
+          </div>
+        </div>
+      </div>
+      <div id="playlist-metadata" class="wrapper content-border">
+        <p class="subtext">Created by: <a class="common-text">Sai Naidu</a> • 5 songs, 18 minutes</p>
+      </div>
+      <div id="playlist-songs" class="wrapper column content-border">
+
+      </div>
+    </div>
+    <div id="right-sidebar">
+    </div>
+  </div>
+</body>
+</html>
